@@ -1,17 +1,15 @@
+
 {
-   "name": "prep",
-   "version": "1.0.0",
-   "main": "index.js",
-   "scripts": {
-      "test": "jest",
-      "jest": "jest --testNamePattern="
-   },
-   "keywords": [],
-   "author": "",
-   "license": "ISC",
-   "dependencies": {
-      "jest": "^29.7.0"
-   },
-   "devDependencies": {},
-   "description": ""
+  "name": "ejercicio-filtrar-por-edad",
+  "version": "1.0.0",
+  "description": "Un proyecto de ejemplo para filtrar objetos por una propiedad de edad con Jest",
+  "main": "index_filtrarPorEdad.js",
+  "scripts": {
+    "test": "jest --verbose --detectOpenHandles --forceExit"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.3.1"
+  }
 }
