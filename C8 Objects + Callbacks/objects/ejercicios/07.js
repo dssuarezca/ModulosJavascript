@@ -7,6 +7,17 @@ function sort(sortBy, list) {
    // recibes --> ("a", [{ a: 1, b: 3 }, { a: 3, b: 2 }, { a: 2, b: 40 }])
    // retorna --> [{ a: 3, b: 2 }, { a: 2, b: 40 }, { a: 1, b: 3 }]
    // Tu código:
+   pos=[]
+   for (var i=0;i<list.length-1;i++){  
+   if (list[i][sortBy]<list[i+1][sortBy]){
+      pos=list[i]
+      list[i]=list[i+1]
+      list[i+1]=pos
+      
+   }
+  
 }
-
+return list
+}
+console.log(sort("a",[{a:12,b:98},{a:15,b:23},{a:50,b:456}]))
 module.exports = sort;
