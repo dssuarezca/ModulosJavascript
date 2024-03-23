@@ -13,7 +13,7 @@ function agregarMetodoCalculoDescuento(objetoProducto) {
   Object.defineProperties(objetoProducto,{
     calcularPrecioDescuento:{
         value: function(){
-          preciofinal=precio-(precio*porcentajeDeDescuento)
+          preciofinal=this.precio-(this.precio*this.porcentajeDeDescuento)
           return preciofinal
         }
 }});

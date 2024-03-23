@@ -2,10 +2,11 @@ objeto={
     hola:"dfgfg",
     comer:74757
 };
-console.log(objeto)
 Object.defineProperties(objeto,{
     DORMIR:{
-        value:"buena noche"
+        value:function (){
+            return this.comer
+        }
     }
 });
-console.log(objeto)
+console.log(objeto.DORMIR(5,3))
