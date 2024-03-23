@@ -1,12 +1,13 @@
 objeto={
-    hola:"dfgfg",
-    comer:74757
+    precio:5,
+    preciodescuento:0.5
 };
 Object.defineProperties(objeto,{
     DORMIR:{
         value:function (){
-            return this.comer
+            preciofinal=this.precio-(this.precio*this.preciodescuento)
+            return preciofinal
         }
     }
 });
-console.log(objeto.DORMIR(5,3))
+console.log(objeto.DORMIR())
